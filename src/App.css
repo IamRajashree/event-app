@@ -1,0 +1,112 @@
+/* Reset default margins and set html/body to full viewport */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* This prevents scrolling */
+}
+
+#root {
+  max-width: 100%; /* Remove the 1280px restriction */
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Prevent container from scrolling */
+}
+
+
+.icon-in-desktop{
+  margin-left: 3rem;
+  margin-top: 3rem;
+  position: relative;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  padding-left: 3px;
+  padding-top: 3px;
+}
+.icon-in-desktop:hover{
+  background-color: beige;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+.event-placeholder{
+  position: absolute;
+  top: 2.4rem;
+  left: 0.2rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+}
+/* card for each events lists 
+.card-box{
+  width: 40rem;
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  position: fixed;
+  color: whitesmoke;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.8rem;
+  background-repeat: no-repeat;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+}*/
+  @media (max-width:"768px") {
+  
+}
+
+.title-event{
+  display:flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.description{
+  text-align: justify;
+}
+
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-card {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.buttons .button1 button{
+  background-color: #007bff;
+}
+button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
